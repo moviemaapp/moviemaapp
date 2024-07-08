@@ -36,7 +36,7 @@ const Projetos = () => {
       {/* <!-- End Breadcrumbs --> */}
 
       {/* <!-- ======= PROJETOS Section ======= --> */}
-      <section id="" className="faq">
+      <section id="" className="faq" style={{ paddingTop: '20px' }}>
         <div className="container" data-aos="fade-up">
           <div className="row gy-4">
             <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">

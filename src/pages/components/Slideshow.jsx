@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 const Slideshow = ({ images, interval = 3000 }) => {
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Função para avançar para a próxima imagem
@@ -39,13 +41,13 @@ const Slideshow = ({ images, interval = 3000 }) => {
   };
 
   return (
-    <>
+    <div className="slideshow-container">
       <img src={images[currentIndex]} alt={`Imagem ${currentIndex}`} />
-      <div className="mt-2">
-        <button style={buttonStyle} onClick={prevSlide}>Anterior</button>
-        <button style={buttonStyle} onClick={nextSlide}>Próximo</button>
+      <div className="slideshow-buttons">
+        <button className="slideshow-button" onClick={prevSlide}>Anterior</button>
+        <button className="slideshow-button" onClick={nextSlide}>Próximo</button>
       </div>
-    </>
+    </div>
   );
 };
 
