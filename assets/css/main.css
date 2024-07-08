@@ -1893,7 +1893,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .faq .accordion-item {
