@@ -18,6 +18,7 @@ function App() {
 
           <Route path='*' element={<NotFound />} />
           <Route path='/moviemaapp/projeto/*' element={<NotFound />} />
+          
         </Route>
 
        
