@@ -12,9 +12,9 @@ function App() {
       <Routes>
         
         <Route element={<Master />}>
-          <Route path='/moviemaapp' element={<Home />} />
-          <Route path='/moviemaapp/projetos' element={<Projetos />} />
-          <Route path='/moviemaapp/projeto/:project_slug' element={<ProjetoDescricao />} />
+          <Route path='/moviemaapp/' element={<Home />} />
+          <Route path='/moviemaapp/projetos/' element={<Projetos />} />
+          <Route path='/moviemaapp/projeto/:project_slug/' element={<ProjetoDescricao />} />
 
           <Route path='*' element={<NotFound />} />
           <Route path='/moviemaapp/projeto/*' element={<NotFound />} />
