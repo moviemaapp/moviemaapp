@@ -25,7 +25,7 @@ const experiencias = () => {
                   <li>
                     <Link to="/moviemaapp/">Home</Link>
                   </li>
-                  <li>Projetos</li>
+                  <li>Experiências</li>
                 </ol>
               </div>
             </div>
@@ -56,7 +56,7 @@ const experiencias = () => {
     
                 <div className="col-lg-5 align-items-stretch order-1 order-lg-2 img">
                   <img
-                    src="/moviemaapp/assets/img/logoprojetos_moviema.jpg"
+                    src="/moviemaapp/assets/img/experiencias/esportes/1_moviema_esportes.jpeg"
                     alt=""
                     className="img-fluid"
                   />

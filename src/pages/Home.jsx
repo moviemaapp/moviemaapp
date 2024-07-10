@@ -92,7 +92,7 @@ const Home = () => {
             <Link to="/moviemaapp/projetos" className="btn-get-started scrollto">
               Projetos
             </Link>    
-                  <span onClick={() => setAnro(!anro)} className="btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i>Apresentações</span>
+                  <span onClick={() => setAnro(!anro)} className="btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i>Vídeo Apresentações</span>
               <FsLightbox	toggler={anro} sources={["https://youtu.be/rtllCba8SVg"]}/>     
           
           </div>
