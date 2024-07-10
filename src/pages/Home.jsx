@@ -806,7 +806,7 @@ const Home = () => {
         {/* <!-- End Profissionais Section --> */}
 
         {/* <!-- ======= Passo a Passo Section ======= --> */}
-        <section id="passo" className="features">
+        <section id="pextensao" className="features">
           <div className="container">
             <div className="section-header">
               <h3 className="sobre">Projetos de Extensão</h3>
