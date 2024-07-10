@@ -979,7 +979,9 @@ const Home = () => {
                       destaque no ano de 2022, promovido pela FEMADE e FAME.
                     </li>
                   </ul>
-                  <p><a className="btn-get-default" href="#">mais...</a></p>
+                  <p>
+                  <Link className="btn-get-default" to="/moviemaapp/experiencias/">mais...</Link>
+                  </p>
 
                 </div>
               </div>

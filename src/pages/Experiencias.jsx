@@ -39,15 +39,10 @@ const experiencias = () => {
                 <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
                   <div className="content px-xl-5">
                     <h3>
-                      O ano de 2023 consagrou o Moviema como um{" "}
-                      <strong>Projeto de Extensão</strong>
+                      1ª Olimpíada MOVIEMA de Esportes
                     </h3>
                     <p>
-                      Passou a atender também os familiares dos estudantes e a
-                      comunidade do entorno da escola. Em 15 meses de atividades, o
-                      Projeto cresceu, as parcerias aumentaram, assim como a
-                      clientela. Festejamos o atendimento de 398 inscritos e
-                      atuantes em 20 atividades.
+                    O esporte e a produção científica
                     </p>
     
                     <p></p>
@@ -57,6 +52,31 @@ const experiencias = () => {
                 <div className="col-lg-5 align-items-stretch order-1 order-lg-2 img">
                   <img
                     src="/moviemaapp/assets/img/experiencias/esportes/1_moviema_esportes.jpeg"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+
+              <div className="row gy-4 mt-2">
+                <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-2">
+                  <div className="content px-xl-5">
+                    <h3>
+                      1ª Olimpíada MOVIEMA e Esportes
+                    </h3>
+                    <p>
+                    A Comissão Organizadora do Moviema, neste ato representada pelo Coordenador Geral, Prof. Jonhatan Camilo, torna público o Regulamento para fins de realizar a inscrição de equipes, convida a todos os estudantes dos ensinos fundamental, médio, técnico e superior das instituições de ensino públicas e privadas, a participarem da 1ª Olimpíada Moviema de Robótica a ser realizado nos dias 23/24 de julho de 2024, no Golden Shopping, localizado na Av. dos Holandeses, 200 - Calhau I, São Luís/Ma, em conformidade com as condições e exigências estabelecidas para a organização.
+                    </p>
+    
+                    <p>
+                    <a href="https://olimpiada-moviema-robotica.vercel.app/" target="_blank">Inscrição Olimpiada de Robótica MOVIEMA</a>
+                    </p>
+                  </div>
+                </div>
+    
+                <div className="col-lg-5 align-items-stretch order-1 order-lg-1 img">
+                  <img
+                    src="/moviemaapp/assets/img/experiencias/robotica/1_moviema_robotica.jpeg"
                     alt=""
                     className="img-fluid"
                   />
