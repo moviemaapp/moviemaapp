@@ -350,7 +350,7 @@ section {
   .navbar .dropdown ul {
     display: block;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 100%;
     margin: 0;
     padding: 0 0 10px 0;
@@ -3224,4 +3224,16 @@ section {
     font-size: 14px;
     padding: 6px 12px;
   }
+}
+
+.btn-get-default {
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: var(--color-white);
+  background: var(--color-primary);
+  font-family: var(--font-secondary);
 }
