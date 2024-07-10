@@ -278,7 +278,7 @@ const Home = () => {
         <section id="cta" className="cta">
           <div className="container-lg">
             <div className="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-              <h3>Profissionais</h3>
+              <h3>Cronograma de Atividades</h3>
             </div>
 
             <div className="col-lg-12">
