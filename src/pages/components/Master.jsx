@@ -103,8 +103,9 @@ const Master = ({ activeSection }) => {
                 </a>
                 <ul className={isActiveDrop ? 'dropdown-active' : ''}>
                   <li><Link to='/moviemaapp/projetos'>Projetos</Link></li>
-                  <li><a href="index-2.html">Atividades do projeto</a></li>
-                  <li><a href="index-3.html">Guia de Projeto</a></li>
+                  <li><Link to='/moviemaapp/'>Atividades do projeto</Link></li>
+                  <li><Link to='/moviemaapp/'>Guia de Projeto</Link></li>
+                  
                 </ul>
             </li>
             
