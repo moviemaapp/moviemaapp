@@ -27,6 +27,7 @@ const Master = ({ activeSection }) => {
 
     document.body.classList.toggle('mobile-nav-active', isActive);
     setIsActive(!isActive); // Inverte o estado atual
+    
   };
 
   const toggleMenu = () => {
@@ -35,6 +36,7 @@ const Master = ({ activeSection }) => {
     if(selectHeader){
       document.body.classList.toggle('mobile-nav-active', isActive);
       setIsActive(!isActive); // Inverte o estado atual
+      
     }
   
   }
@@ -69,6 +71,11 @@ const Master = ({ activeSection }) => {
 
   // =================================================
 
+  const [isActiveDrop, setIsActiveDrop] = useState(false);
+  const handleClick = () => {
+    setIsActiveDrop(!isActiveDrop);
+  };
+
   return (
     <>
       
@@ -89,11 +96,25 @@ const Master = ({ activeSection }) => {
               <li><a className={`nav-link scrollto ${activeLink === 'passo' ? 'active' : ''}`} href="/moviemaapp/#pextensao" onClick={toggleMenu}>Projetos de Extensão</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'execucao' ? 'active' : ''}`} href="/moviemaapp/#execucao" onClick={toggleMenu}>Execução</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Experiências</a></li>
+            
+              <li className="dropdown">
+                <a href="#" className={isActiveDrop ? 'active' : ''} onClick={handleClick}>
+                  <span>Projetos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
+                </a>
+                <ul className={isActiveDrop ? 'dropdown-active' : ''}>
+                  <li><Link to='/moviemaapp/projetos'>Projetos</Link></li>
+                  <li><a href="index-2.html">Atividades do projeto</a></li>
+                  <li><a href="index-3.html">Guia de Projeto</a></li>
+                </ul>
+            </li>
+            
             </ul>
+
+         
 
              <i onClick={toggleClass} className={` ${isActive ? 'bi mobile-nav-toggle d-none bi-list' : 'bi mobile-nav-toggle d-none bi-x'}`}></i>
           </nav>
-          <Link className="btn-getstarted scrollto" to='/moviemaapp/projetos'>Projetos</Link>
+          {/* <Link className="btn-getstarted scrollto" to='/moviemaapp/projetos'>Projetos</Link> */}
 
         </div>
       </header>
