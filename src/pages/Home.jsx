@@ -809,7 +809,7 @@ const Home = () => {
         <section id="passo" className="features">
           <div className="container">
             <div className="section-header">
-              <h3 className="sobre">Passo a Passo</h3>
+              <h3 className="sobre">Projetos de Extensão</h3>
             </div>
 
             <ul className="nav nav-tabs row gy-6 d-flex">
