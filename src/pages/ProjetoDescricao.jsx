@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import dbProjetos from "../data/dbProjetos";
+// 
+import dbProjetos from "../data/dbProjetosNew";
 
 import Slideshow from "./components/Slideshow";
 

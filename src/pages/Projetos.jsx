@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import dbProjetos from "../data/dbProjetos";
+// import dbProjetos from "../data/dbProjetos";
+import dbProjetos from "../data/dbProjetosNew";
 import ProjetoCard from "./ProjetoCard";
+import ProjetoCardNew from "./ProjetoCardNew";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -70,13 +72,24 @@ const Projetos = () => {
 
           <div className="col-lg-12 mt-5">
             <div className="row gy-4 posts-list">
-              {dbProjetos.map(
+              {/* {dbProjetos.map(
                 ({ id, project_slug, title, description, image }) => (
                   <ProjetoCard
                     key={id}
                     project_slug={project_slug}
                     title={title}
                     description={description}
+                    image={image}
+                  />
+                )
+              )} */}
+               {dbProjetos.map(
+                ({ id, project_slug, title, image }) => (
+                  <ProjetoCardNew
+                    key={id}
+                    project_slug={project_slug}
+                    title={title}
+         
                     image={image}
                   />
                 )

@@ -5,6 +5,7 @@ import NotFound from './pages/NotFound'
 import Master from './pages/components/Master'
 import ProjetoDescricao from './pages/ProjetoDescricao'
 import Experiencias from './pages/Experiencias'
+import AtividadeProjetos from './pages/AtividadeProjetos'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
           <Route path='/moviemaapp/projeto/:project_slug/' element={<ProjetoDescricao />} />
 
           <Route path='/moviemaapp/experiencias/' element={<Experiencias />} />
+          <Route path='/moviemaapp/atividades_projetos/' element={<AtividadeProjetos />} />
 
           <Route path='*' element={<NotFound />} />
           <Route path='/moviemaapp/projeto/*' element={<NotFound />} />

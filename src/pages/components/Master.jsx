@@ -93,7 +93,7 @@ const Master = ({ activeSection }) => {
               <li><a className={`nav-link scrollto ${activeLink === 'home' ? '' : ''}`} href="/moviemaapp/" onClick={toggleMenu}>Home</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'about' ? 'active' : ''}`} href="/moviemaapp/#about" onClick={toggleMenu}>Sobre</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'cta' ? 'active' : ''}`} href="/moviemaapp/#cta" onClick={toggleMenu}>Cronograma</a></li>
-              <li><a className={`nav-link scrollto ${activeLink === 'passo' ? 'active' : ''}`} href="/moviemaapp/#pextensao" onClick={toggleMenu}>Projetos de Extensão</a></li>
+              <li><a className={`nav-link scrollto ${activeLink === 'pextensao' ? 'active' : ''}`} href="/moviemaapp/#pextensao" onClick={toggleMenu}>Projetos de Extensão</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'execucao' ? 'active' : ''}`} href="/moviemaapp/#execucao" onClick={toggleMenu}>Execução</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Experiências</a></li>
             
@@ -103,7 +103,7 @@ const Master = ({ activeSection }) => {
                 </a>
                 <ul className={isActiveDrop ? 'dropdown-active' : ''}>
                   <li><Link to='/moviemaapp/projetos'>Projetos</Link></li>
-                  <li><Link to='/moviemaapp/'>Atividades do projeto</Link></li>
+                  {/* <li><Link to='/moviemaapp/'>Atividades do projeto</Link></li> */}
                   <li><Link to='/moviemaapp/'>Guia de Projeto</Link></li>
                   
                 </ul>

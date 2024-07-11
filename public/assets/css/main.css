@@ -3237,3 +3237,22 @@ section {
   background: var(--color-primary);
   font-family: var(--font-secondary);
 }
+
+.btn-get-project-card {
+font-family: var(--font-secondary);
+font-weight: 400;
+font-size: 16px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 8px 32px;
+border-radius: 5px;
+transition: 0.5s;
+animation: fadeInUp 1s both 0.6s;
+color: var(--color-primary);
+border: 2px solid var(--color-primary);
+}
+
+.btn-get-project-card:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
