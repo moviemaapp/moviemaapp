@@ -76,13 +76,36 @@ const Master = ({ activeSection }) => {
     setIsActiveDrop(!isActiveDrop);
   };
 
+  const toggleClass1 = () => {
+    document.body.classList.toggle('mobile-nav-active', isActive);
+    setIsActive(!isActive); // Inverte o estado atual
+
+    setIsActiveDrop(!isActiveDrop);
+  };
+
+
   const [isActiveDrop2, setIsActiveDrop2] = useState(false);
   const handleClick2 = () => {
     setIsActiveDrop2(!isActiveDrop2);
   };
 
+  const toggleClass2 = () => {
+    document.body.classList.toggle('mobile-nav-active', isActive);
+    setIsActive2(!isActive); // Inverte o estado atual
+
+    setIsActiveDrop2(!isActiveDrop2);
+  };
+
+
   const [isActiveDrop3, setIsActiveDrop3] = useState(false);
   const handleClick3 = () => {
+    setIsActiveDrop3(!isActiveDrop3);
+  };
+
+  const toggleClass3 = () => {
+    document.body.classList.toggle('mobile-nav-active', isActive);
+    setIsActive3(!isActive); // Inverte o estado atual
+
     setIsActiveDrop3(!isActiveDrop3);
   };
 
@@ -112,8 +135,8 @@ const Master = ({ activeSection }) => {
                 <ul className={isActiveDrop ? 'dropdown-active' : ''}>
                   <li><Link to='/moviemaapp/projetos'>JEIPS</Link></li>
                   {/* <li><Link to='/moviemaapp/'>Atividades do projeto</Link></li> */}
-                  <li><Link to='/moviemaapp/olimpiada_moviema_de_robotica/'>Olimpíada MovIEMA de Robótica</Link></li>
-                  <li><Link to='/moviemaapp/olimpiada_moviema_de_esportes/'>Olimpíada MovIEMA de Esportes</Link></li>
+                  <li><Link to='/moviemaapp/olimpiada_moviema_de_robotica/' onClick={toggleClass1}>Olimpíada MovIEMA de Robótica</Link></li>
+                  <li><Link to='/moviemaapp/olimpiada_moviema_de_esportes/' onClick={toggleClass1}>Olimpíada MovIEMA de Esportes</Link></li>
                   
                 </ul>
               </li>
@@ -124,8 +147,8 @@ const Master = ({ activeSection }) => {
                 </a>
                 <ul className={isActiveDrop2 ? 'dropdown-active' : ''}>
                   <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Entrevista Rádio Timbira</a></li>
-                  <li><Link to='/moviemaapp/'>Tambor de Crioula Quinta das Laranjeiras</Link></li>              
-                  <li><Link to='/moviemaapp/'>Apresentação do projeto MovIEMA</Link></li>              
+                  <li><Link to='/moviemaapp/' onClick={toggleClass2}>Tambor de Crioula Quinta das Laranjeiras</Link></li>              
+                  <li><Link to='/moviemaapp/' onClick={toggleClass2}>Apresentação do projeto MovIEMA</Link></li>              
                 </ul>
               </li>
 
@@ -134,9 +157,9 @@ const Master = ({ activeSection }) => {
                   <span>Guia de Projetos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
                 </a>
                 <ul className={isActiveDrop3 ? 'dropdown-active' : ''}>
-                  <li><Link to='/moviemaapp/projetos'>O MovIEMA</Link></li>
-                  <li><Link to='/moviemaapp/'>Guia Projetos de Extensão</Link></li>              
-                  <li><Link to='/moviemaapp/'>Modelo de Projeto</Link></li>              
+                  <li><Link to='/moviemaapp/projetos' onClick={toggleClass3}>O MovIEMA</Link></li>
+                  <li><Link to='/moviemaapp/' onClick={toggleClass3}>Guia Projetos de Extensão</Link></li>              
+                  <li><Link to='/moviemaapp/' onClick={toggleClass3}>Modelo de Projeto</Link></li>              
                 </ul>
               </li>
 
