@@ -271,10 +271,88 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <section id="" className="features">
+          <div className="container">
+            <ul className="nav nav-tabs row gy-6 d-flex">
+              <li className="nav-item col-6 col-md-6 col-lg-6">
+                <a
+                  className="nav-link active show"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-1"
+                >
+                  <i className="bi bi-bricks color-cyan"></i>
+                  <h4>Criação</h4>
+                </a>
+              </li>
+              {/* <!-- End Tab 1 Nav --> */}
+
+              <li className="nav-item col-6 col-md-6 col-lg-6">
+                <a
+                  className="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-2"
+                >
+                  <i className="bi bi-search color-teal"></i>
+                  <h4>Visão</h4>
+                </a>
+              </li>
+              {/* <!-- End Tab 3 Nav --> */}
+            </ul>
+
+            <div className="tab-content">
+              <div className="tab-pane active show" id="tab-1">
+                <div className="row gy-4">
+                  <div className="col-lg-8 order-2 order-lg-1">
+                    <h3>Criação</h3>
+                    <p className="fst-italic">
+                      O Projeto MovIEMA foi criado em setembro de 2022, na
+                      intenção de potencializar a utilização do amplo espaço
+                      físico da escola IEMA Pleno São Luís e atenuar as tensões
+                      e sintomas de ansiedade dos alunos pós pandemia, causada
+                      pelo vírus Covid-19.
+                    </p>
+                    <ul>
+                      <li>
+                        <i className="bi bi-check-circle-fill"></i> O Projeto
+                        atua após as 17h, quando finalizam as atividades
+                        semanais na escola, dentro do modelo IEMA Pleno.
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-lg-4 order-1 order-lg-2 text-center">
+                    <img src="/moviemaapp/assets/img/2.jpg" alt="" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- End Tab Content 1 --> */}
+
+              <div className="tab-pane" id="tab-2">
+                <div className="row gy-4">
+                  <div className="col-lg-8 order-2 order-lg-1">
+                    <h3>Visão</h3>
+                    <p>
+                      O Projeto visa contribuir para fortalecer o protagonismo
+                      juvenil, que já tem esta vivência nos Itinerários
+                      Formativos (disciplinas eletivas, projeto de Vida, Base
+                      Técnica, clubes, núcleos de estudo), entre outras
+                      atividades, que os estudantes poderão escolher no Ensino
+                      Médio.
+                    </p>
+                  </div>
+                  <div className="col-lg-4 order-1 order-lg-2 text-center">
+                    <img src="/moviemaapp/assets/img/1.jpg" alt="" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- End Tab Content 2 --> */}
+            </div>
+          </div>
+        </section>
+          
         </section>
         {/* <!-- End SOBRE Section --> */}
 
-        {/* <!-- ======= Profissionais Section ======= --> */}
+        {/* <!-- ======= CRONOGRAMA Section ======= --> */}
         <section id="cta" className="cta">
           <div className="container-lg">
             <div className="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
@@ -806,7 +884,7 @@ const Home = () => {
         {/* <!-- End Profissionais Section --> */}
 
         {/* <!-- ======= Passo a Passo Section ======= --> */}
-        <section id="pextensao" className="features">
+        {/* <section id="pextensao" className="features">
           <div className="container">
             <div className="section-header">
               <h3 className="sobre">Projetos de Extensão</h3>
@@ -823,7 +901,7 @@ const Home = () => {
                   <h4>Criação</h4>
                 </a>
               </li>
-              {/* <!-- End Tab 1 Nav --> */}
+          
 
               <li className="nav-item col-6 col-md-6 col-lg-6">
                 <a
@@ -835,7 +913,7 @@ const Home = () => {
                   <h4>Visão</h4>
                 </a>
               </li>
-              {/* <!-- End Tab 3 Nav --> */}
+         
             </ul>
 
             <div className="tab-content">
@@ -863,7 +941,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              {/* <!-- End Tab Content 1 --> */}
+           
 
               <div className="tab-pane" id="tab-2">
                 <div className="row gy-4">
@@ -883,10 +961,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              {/* <!-- End Tab Content 2 --> */}
+        
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <!-- End Passo a Passo Section --> */}
 
         {/* <!-- ======= EXECUSSÃO Section ======= --> */}

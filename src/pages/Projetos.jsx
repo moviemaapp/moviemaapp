@@ -25,12 +25,12 @@ const Projetos = () => {
       <div className="breadcrumbs">
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
-            <h2>Projetos</h2>
+            <h2>Atividades do MovIEMA</h2>
             <ol>
               <li>
                 <Link to="/moviemaapp/">Home</Link>
               </li>
-              <li>Projetos</li>
+              <li>Atividades do MovIEMA</li>
             </ol>
           </div>
         </div>

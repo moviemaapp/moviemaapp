@@ -76,6 +76,16 @@ const Master = ({ activeSection }) => {
     setIsActiveDrop(!isActiveDrop);
   };
 
+  const [isActiveDrop2, setIsActiveDrop2] = useState(false);
+  const handleClick2 = () => {
+    setIsActiveDrop2(!isActiveDrop2);
+  };
+
+  const [isActiveDrop3, setIsActiveDrop3] = useState(false);
+  const handleClick3 = () => {
+    setIsActiveDrop3(!isActiveDrop3);
+  };
+
   return (
     <>
       
@@ -93,21 +103,59 @@ const Master = ({ activeSection }) => {
               <li><a className={`nav-link scrollto ${activeLink === 'home' ? '' : ''}`} href="/moviemaapp/" onClick={toggleMenu}>Home</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'about' ? 'active' : ''}`} href="/moviemaapp/#about" onClick={toggleMenu}>Sobre</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'cta' ? 'active' : ''}`} href="/moviemaapp/#cta" onClick={toggleMenu}>Cronograma</a></li>
-              <li><a className={`nav-link scrollto ${activeLink === 'pextensao' ? 'active' : ''}`} href="/moviemaapp/#pextensao" onClick={toggleMenu}>Projetos de Extensão</a></li>
-              <li><a className={`nav-link scrollto ${activeLink === 'execucao' ? 'active' : ''}`} href="/moviemaapp/#execucao" onClick={toggleMenu}>Execução</a></li>
-              <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Experiências</a></li>
-            
+              <li><Link to='/moviemaapp/projetos'>Atividades do MovIEMA</Link></li>
+
               <li className="dropdown">
+                <a href="#" className={isActiveDrop ? 'active' : ''} onClick={handleClick}>
+                  <span>Eventos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
+                </a>
+                <ul className={isActiveDrop ? 'dropdown-active' : ''}>
+                  <li><Link to='/moviemaapp/projetos'>JEIPS</Link></li>
+                  {/* <li><Link to='/moviemaapp/'>Atividades do projeto</Link></li> */}
+                  <li><Link to='/moviemaapp/olimpiada_moviema_de_robotica/'>Olimpíada MovIEMA de Robótica</Link></li>
+                  <li><Link to='/moviemaapp/olimpiada_moviema_de_esportes/'>Olimpíada MovIEMA de Esportes</Link></li>
+                  
+                </ul>
+              </li>
+
+              <li className="dropdown">
+                <a href="#" className={isActiveDrop2 ? 'active' : ''} onClick={handleClick2}>
+                  <span>Experiências</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
+                </a>
+                <ul className={isActiveDrop2 ? 'dropdown-active' : ''}>
+                  <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Entrevista Rádio Timbira</a></li>
+                  <li><Link to='/moviemaapp/'>Tambor de Crioula Quinta das Laranjeiras</Link></li>              
+                  <li><Link to='/moviemaapp/'>Apresentação do projeto MovIEMA</Link></li>              
+                </ul>
+              </li>
+
+              <li className="dropdown">
+                <a href="#" className={isActiveDrop3 ? 'active' : ''} onClick={handleClick3}>
+                  <span>Guia de Projetos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
+                </a>
+                <ul className={isActiveDrop3 ? 'dropdown-active' : ''}>
+                  <li><Link to='/moviemaapp/projetos'>O MovIEMA</Link></li>
+                  <li><Link to='/moviemaapp/'>Guia Projetos de Extensão</Link></li>              
+                  <li><Link to='/moviemaapp/'>Modelo de Projeto</Link></li>              
+                </ul>
+              </li>
+
+              <li><Link to='/moviemaapp/projetos'>Resultados</Link></li>
+              
+              {/* <li><a className={`nav-link scrollto ${activeLink === 'pextensao' ? 'active' : ''}`} href="/moviemaapp/#pextensao" onClick={toggleMenu}>Projetos de Extensão</a></li>
+              <li><a className={`nav-link scrollto ${activeLink === 'execucao' ? 'active' : ''}`} href="/moviemaapp/#execucao" onClick={toggleMenu}>Execução</a></li>
+              <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Experiências</a></li> */}
+            
+              {/* <li className="dropdown">
                 <a href="#" className={isActiveDrop ? 'active' : ''} onClick={handleClick}>
                   <span>Projetos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
                 </a>
                 <ul className={isActiveDrop ? 'dropdown-active' : ''}>
                   <li><Link to='/moviemaapp/projetos'>Projetos</Link></li>
-                  {/* <li><Link to='/moviemaapp/'>Atividades do projeto</Link></li> */}
                   <li><Link to='/moviemaapp/'>Guia de Projeto</Link></li>
                   
                 </ul>
-            </li>
+              </li> */}
             
             </ul>
 
