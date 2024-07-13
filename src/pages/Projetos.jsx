@@ -52,7 +52,7 @@ const Projetos = () => {
                   comunidade do entorno da escola. Em 15 meses de atividades, o
                   Projeto cresceu, as parcerias aumentaram, assim como a
                   clientela. Festejamos o atendimento de 398 inscritos e
-                  atuantes em 20 atividades.
+                  atuantes em 30 atividades.
                 </p>
 
                 <p></p>
