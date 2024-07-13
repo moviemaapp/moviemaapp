@@ -154,11 +154,7 @@ const Master = ({ activeSection }) => {
                   <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Entrevista Rádio Timbira</a></li>
                   <li><Link to='/moviemaapp/' onClick={toggleClass2}>Tambor de Crioula Quinta das Laranjeiras</Link></li>
                   <li><Link to='/moviemaapp/'   onClick={toggleClass2}>Apresentação do projeto MovIEMA</Link></li>
-                  {/* <li><Link  onClick={handleArno2} >Tambor de Crioula Quinta das Laranjeiras</Link></li>
-                  <FsLightbox	toggler={anro} sources={["https://www.youtube.com/watch?v=IvEcFkbvdOM&t=47s"]}/> 
-
-                  <li><Link  onClick={handleArno} >Apresentação do projeto MovIEMA</Link></li>
-                  <FsLightbox	toggler={anro} sources={["https://youtu.be/rtllCba8SVg"]}/>  */}
+              
 
 
 
