@@ -134,7 +134,7 @@ const Master = ({ activeSection }) => {
               <li><Link to='/moviemaapp/projetos'>Atividades do MovIEMA</Link></li>
 
               <li className="dropdown">
-                <a href="#" className={isActiveDrop ? 'active' : ''} onClick={handleClick}>
+                <a href="#" onClick={handleClick}>
                   <span>Eventos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
                 </a>
                 <ul className={isActiveDrop ? 'dropdown-active' : ''}>
@@ -145,7 +145,8 @@ const Master = ({ activeSection }) => {
               </li>
 
               <li className="dropdown">
-                <a href="#" className={isActiveDrop2 ? 'active' : ''} onClick={handleClick2}>
+                <a href="#" onClick={handleClick2}>
+                {/* <a href="#" className={isActiveDrop2 ? 'active' : ''} onClick={handleClick2}> */}
                   <span>Experiências</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
                 </a>
                 <ul className={isActiveDrop2 ? 'dropdown-active' : ''}>
@@ -156,7 +157,7 @@ const Master = ({ activeSection }) => {
               </li>
 
               <li className="dropdown">
-                <a href="#" className={isActiveDrop3 ? 'active' : ''} onClick={handleClick3}>
+                <a href="#"  onClick={handleClick3}>
                   <span>Guia de Projetos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
                 </a>
                 <ul className={isActiveDrop3 ? 'dropdown-active' : ''}>
