@@ -93,7 +93,7 @@ const Master = ({ activeSection }) => {
 
   const toggleClass2 = () => {
     document.body.classList.toggle('mobile-nav-active', isActive);
-    setIsActive2(!isActive); // Inverte o estado atual
+    setIsActive(!isActive); // Inverte o estado atual
 
     setIsActiveDrop2(!isActiveDrop2);
   };
@@ -106,7 +106,7 @@ const Master = ({ activeSection }) => {
 
   const toggleClass3 = () => {
     document.body.classList.toggle('mobile-nav-active', isActive);
-    setIsActive3(!isActive); // Inverte o estado atual
+    setIsActive(!isActive); // Inverte o estado atual
 
     setIsActiveDrop3(!isActiveDrop3);
   };
