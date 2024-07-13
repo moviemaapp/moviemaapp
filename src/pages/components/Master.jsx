@@ -111,29 +111,29 @@ const Master = ({ activeSection }) => {
     setIsActiveDrop3(!isActiveDrop3);
   };
 
-  const [anro, setAnro] = useState(false);
-  const prevAnroRef = useRef();
+  // const [anro, setAnro] = useState(false);
+  // const prevAnroRef = useRef();
 
-  const handleArno = () => {
-    setAnro(!anro);
+  // const handleArno = () => {
+  //   setAnro(!anro);
 
-      // const menuItem = document.querySelector('.active');
-      // const dropdownItem = document.querySelector('.dropdown-active');
+  //     // const menuItem = document.querySelector('.active');
+  //     // const dropdownItem = document.querySelector('.dropdown-active');
 
-      // if (menuItem) {
-      //   menuItem.classList.remove('active');
-      // }
-      // if (dropdownItem) {
-      //   dropdownItem.classList.remove('dropdown-active');
-      // }
+  //     // if (menuItem) {
+  //     //   menuItem.classList.remove('active');
+  //     // }
+  //     // if (dropdownItem) {
+  //     //   dropdownItem.classList.remove('dropdown-active');
+  //     // }
 
-  };
+  // };
 
-  const handleArno2 = () => {
-    setAnro2(!anro2);
+  // const handleArno2 = () => {
+  //   setAnro2(!anro2);
 
 
-  };
+  // };
 
  
 
