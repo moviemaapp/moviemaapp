@@ -2,7 +2,7 @@ import {Link, Outlet, NavLink } from 'react-router-dom'
 import Footer from './Footer'
 import React, { useState, useEffect, useRef } from 'react';
 
-import FsLightbox from "fslightbox-react";
+
 
 const Master = ({ activeSection }) => {
 
