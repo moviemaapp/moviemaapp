@@ -147,7 +147,7 @@ const Master = ({ activeSection }) => {
                   <span>Eventos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
                 </a>
                 <ul className={isActiveDrop ? 'dropdown-active' : ''}>
-                  <li><Link to='/moviemaapp/jeips/'>JEIPS</Link></li>
+                  <li><Link to='/moviemaapp/jeips/' onClick={toggleClass1}>JEIPS</Link></li>
                   <li><Link to='/moviemaapp/olimpiada_moviema_de_robotica/' onClick={toggleClass1}>Olimpíada MovIEMA de Robótica</Link></li>
                   <li><Link to='/moviemaapp/olimpiada_moviema_de_esportes/' onClick={toggleClass1}>Olimpíada MovIEMA de Esportes</Link></li>
                 </ul>
