@@ -142,7 +142,7 @@ const Master = ({ activeSection }) => {
               <li><a className={`nav-link scrollto ${activeLink === 'home' ? '' : ''}`} href="/moviemaapp/" onClick={toggleMenu}>Home</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'about' ? 'active' : ''}`} href="/moviemaapp/#about" onClick={toggleMenu}>Sobre</a></li>
               <li><a className={`nav-link scrollto ${activeLink === 'cta' ? 'active' : ''}`} href="/moviemaapp/#cta" onClick={toggleMenu}>Cronograma</a></li>
-              <li><Link to='/moviemaapp/projetos'>Atividades do MovIEMA</Link></li>
+              <li><Link to='/moviemaapp/projetos' onClick={toggleMenu}>Atividades do MovIEMA</Link></li>
 
               <li className="dropdown">
                 <a href="#" onClick={handleClick}>
