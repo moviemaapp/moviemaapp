@@ -11,6 +11,7 @@ import OlimpRobotica from './pages/OlimpRobotica'
 import GuiaMovIEMA from './pages/GuiaMovIEMA'
 import GuiaModelo from './pages/GuiaModelo'
 import GuiaExtetnsao from './pages/GuiaExtetnsao'
+import GuiaTeste from './pages/GuiaTeste'
 
 
 
@@ -35,6 +36,9 @@ function App() {
           <Route path='/moviemaapp/guia_moviema/' element={<GuiaMovIEMA />} />
           <Route path='/moviemaapp/guia_extensao/' element={<GuiaExtetnsao />} />
           <Route path='/moviemaapp/guia_modelo/' element={<GuiaModelo />} />
+          <Route path='/moviemaapp/guia_teste/' element={<GuiaTeste />} />
+
+
 
           <Route path='*' element={<NotFound />} />
           <Route path='/moviemaapp/projeto/*' element={<NotFound />} />

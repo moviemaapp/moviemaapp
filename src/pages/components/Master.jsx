@@ -163,6 +163,7 @@ const Master = ({ activeSection }) => {
                   <li><Link to='/moviemaapp/guia_moviema/' onClick={toggleClass3}>O MovIEMA</Link></li>
                   <li><Link to='/moviemaapp/guia_extensao/' onClick={toggleClass3}>Guia Projetos de Extensão</Link></li>              
                   <li><Link to='/moviemaapp/guia_modelo/' onClick={toggleClass3}>Modelo de Projeto</Link></li> 
+                  <li><Link to='/moviemaapp/guia_teste/' onClick={toggleClass3}>Modelo de t</Link></li> 
                                
                 </ul>
               </li>
