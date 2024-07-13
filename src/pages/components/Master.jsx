@@ -1,6 +1,7 @@
 import {Link, Outlet, NavLink } from 'react-router-dom'
 import Footer from './Footer'
 import React, { useState, useEffect, useRef } from 'react';
+import FsLightbox from "fslightbox-react";
 
 
 
@@ -29,7 +30,9 @@ const Master = ({ activeSection }) => {
 
     document.body.classList.toggle('mobile-nav-active', isActive);
     setIsActive(!isActive); // Inverte o estado atual
-    
+
+  
+   
   };
 
   const toggleMenu = () => {
@@ -111,7 +114,15 @@ const Master = ({ activeSection }) => {
     setIsActiveDrop3(!isActiveDrop3);
   };
 
-
+  const [anro, setAnro] = useState(false);
+  const anroDrop = () =>{
+    setAnro(!anro);
+    // const menuItem = document.querySelector('.dropdown-active');
+    toggleClass();
+    // if (menuItem) {
+    //   menuItem.classList.remove('dropdown-active');
+    // }
+  }
  
 
   return (
@@ -151,8 +162,13 @@ const Master = ({ activeSection }) => {
                 </a>
                 <ul className={isActiveDrop2 ? 'dropdown-active' : ''}>
                   <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Entrevista Rádio Timbira</a></li>
-                  <li><Link to='/moviemaapp/' onClick={toggleClass2}>Tambor de Crioula Quinta das Laranjeiras</Link></li>
-                  <li><Link to='/moviemaapp/'   onClick={toggleClass2}>Apresentação do projeto MovIEMA</Link></li>
+                  <li><a href='https://www.youtube.com/watch?v=IvEcFkbvdOM&t=47s' target='_blank' onClick={toggleClass2}>Tambor de Crioula Quinta das Laranjeiras</a></li>
+                 
+                  <li>
+                  <span onClick={anroDrop} className="">Apresentação do projeto MovIEMA</span></li>
+                  <FsLightbox	toggler={anro} sources={["https://youtu.be/rtllCba8SVg"]}/> 
+                
+                  {/* <li><Link to='/moviemaapp/'   onClick={toggleClass2}>Apresentação do projeto MovIEMA</Link></li> */}
                 </ul>
               </li>
 
@@ -163,9 +179,7 @@ const Master = ({ activeSection }) => {
                 <ul className={isActiveDrop3 ? 'dropdown-active' : ''}>
                   <li><Link to='/moviemaapp/guia_moviema/' onClick={toggleClass3}>O MovIEMA</Link></li>
                   <li><Link to='/moviemaapp/guia_extensao/' onClick={toggleClass3}>Guia Projetos de Extensão</Link></li>              
-                  <li><Link to='/moviemaapp/guia_modelo/' onClick={toggleClass3}>Modelo de Projeto</Link></li> 
-                  <li><Link to='/moviemaapp/guia_teste/' onClick={toggleClass3}>Modelo de t</Link></li> 
-                               
+                  <li><Link to='/moviemaapp/guia_modelo/' onClick={toggleClass3}>Modelo de Projeto</Link></li>                              
                 </ul>
               </li>
 
