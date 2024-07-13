@@ -117,11 +117,9 @@ const Master = ({ activeSection }) => {
   const [anro, setAnro] = useState(false);
   const anroDrop = () =>{
     setAnro(!anro);
-    // const menuItem = document.querySelector('.dropdown-active');
+
     toggleClass();
-    // if (menuItem) {
-    //   menuItem.classList.remove('dropdown-active');
-    // }
+
   }
  
 
@@ -149,7 +147,7 @@ const Master = ({ activeSection }) => {
                   <span>Eventos</span> <i className="bi bi-chevron-down dropdown-indicator"></i>
                 </a>
                 <ul className={isActiveDrop ? 'dropdown-active' : ''}>
-                  <li><Link to='/moviemaapp/projetos'>JEIPS</Link></li>
+                  <li><Link to='/moviemaapp/jeips/'>JEIPS</Link></li>
                   <li><Link to='/moviemaapp/olimpiada_moviema_de_robotica/' onClick={toggleClass1}>Olimpíada MovIEMA de Robótica</Link></li>
                   <li><Link to='/moviemaapp/olimpiada_moviema_de_esportes/' onClick={toggleClass1}>Olimpíada MovIEMA de Esportes</Link></li>
                 </ul>
@@ -165,8 +163,9 @@ const Master = ({ activeSection }) => {
                   <li><a href='https://www.youtube.com/watch?v=IvEcFkbvdOM&t=47s' target='_blank' onClick={toggleClass2}>Tambor de Crioula Quinta das Laranjeiras</a></li>
                  
                   <li>
-                  <span onClick={anroDrop} className="">Apresentação do projeto MovIEMA</span></li>
+                  <a  onClick={anroDrop} className="">Apresentação do projeto MovIEMA</a></li>
                   <FsLightbox	toggler={anro} sources={["https://youtu.be/rtllCba8SVg"]}/> 
+                  
                 
                   {/* <li><Link to='/moviemaapp/'   onClick={toggleClass2}>Apresentação do projeto MovIEMA</Link></li> */}
                 </ul>

@@ -11,6 +11,7 @@ import OlimpRobotica from './pages/OlimpRobotica'
 import GuiaMovIEMA from './pages/GuiaMovIEMA'
 import GuiaModelo from './pages/GuiaModelo'
 import GuiaExtetnsao from './pages/GuiaExtetnsao'
+import Jeips from './pages/Jeips'
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/moviemaapp/experiencias/' element={<Experiencias />} />
           <Route path='/moviemaapp/atividades_projetos/' element={<AtividadeProjetos />} />
 
+          <Route path='/moviemaapp/jeips/' element={<Jeips />} />
           <Route path='/moviemaapp/olimpiada_moviema_de_esportes/' element={<OlimpEsportes />} />
           <Route path='/moviemaapp/olimpiada_moviema_de_robotica/' element={<OlimpRobotica />} />
 
