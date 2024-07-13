@@ -139,10 +139,8 @@ const Master = ({ activeSection }) => {
                 </a>
                 <ul className={isActiveDrop ? 'dropdown-active' : ''}>
                   <li><Link to='/moviemaapp/projetos'>JEIPS</Link></li>
-                  {/* <li><Link to='/moviemaapp/'>Atividades do projeto</Link></li> */}
                   <li><Link to='/moviemaapp/olimpiada_moviema_de_robotica/' onClick={toggleClass1}>Olimpíada MovIEMA de Robótica</Link></li>
                   <li><Link to='/moviemaapp/olimpiada_moviema_de_esportes/' onClick={toggleClass1}>Olimpíada MovIEMA de Esportes</Link></li>
-                  
                 </ul>
               </li>
 
@@ -154,10 +152,6 @@ const Master = ({ activeSection }) => {
                   <li><a className={`nav-link scrollto ${activeLink === 'experiencias' ? 'active' : ''}`} href="/moviemaapp/#experiencias" onClick={toggleMenu}>Entrevista Rádio Timbira</a></li>
                   <li><Link to='/moviemaapp/' onClick={toggleClass2}>Tambor de Crioula Quinta das Laranjeiras</Link></li>
                   <li><Link to='/moviemaapp/'   onClick={toggleClass2}>Apresentação do projeto MovIEMA</Link></li>
-              
-
-
-
                 </ul>
               </li>
 
